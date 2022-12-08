@@ -19,3 +19,24 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+// 1 užduotis
+function getUserAverageAge() {
+  let sum = 0
+  users.forEach(item => {
+    sum += item.age
+  })
+  let result = sum / users.length
+  console.log(`Visų "users" amžiaus vidurkis yra: ${result.toFixed(2)}`)
+}
+getUserAverageAge()
+
+// 2 užduotis
+function getUsersNames() {
+  let nameArray = []
+  users.forEach(item => {
+    nameArray.push(item.name)
+  })
+  console.log(nameArray)
+}
+getUsersNames()

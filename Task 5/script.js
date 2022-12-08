@@ -19,3 +19,27 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// 1 užduotis
+function filterDogOwners() {
+  let usersWithDogs = []
+  users.forEach(item => {
+    if (item.hasDog === true) {
+      usersWithDogs.push(item.name)
+    }
+  })
+  console.log(usersWithDogs)
+}
+filterDogOwners()
+
+// 2 užduotis
+function filterAdults() {
+  let grownups = []
+  users.forEach(item => {
+    if (item.age === 18 || item.age > 18) {
+      grownups.push(item.name)
+    }
+  })
+  console.log(grownups)
+}
+filterAdults()
